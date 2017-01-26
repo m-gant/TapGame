@@ -35,48 +35,70 @@
                                             <action selector="Player1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGg-Wf-CIN"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T35-ls-RLa" userLabel="Menu &amp; Display Stack View">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="T35-ls-RLa" userLabel="Menu &amp; Display Stack View">
                                         <rect key="frame" x="0.0" y="215.5" width="335" height="208"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-ga-HMR" userLabel="Player 1 Display Stack View">
-                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="208"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="208"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Player 1 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-3z-Ohx">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" ambiguous="YES" text="Player 1 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-3z-Ohx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="47"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82047441710000002" blue="0.0076025744149999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz1-YR-zSw">
-                                                        <rect key="frame" x="0.0" y="20.5" width="111.5" height="187.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pz1-YR-zSw">
+                                                        <rect key="frame" x="0.0" y="47" width="108.5" height="161"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="150"/>
+                                                        <color key="textColor" red="0.0" green="0.8204744170984456" blue="0.0076025744145800118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-55-Dsn" userLabel="Player 2 Display Stack View">
-                                                <rect key="frame" x="111.5" y="0.0" width="112" height="208"/>
+                                                <rect key="frame" x="113.5" y="0.0" width="108" height="208"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA9-ID-3Kg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="104"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="104"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
                                                         <state key="normal" title="Start"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                                <integer key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                                <color key="value" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="Startpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rjd-Qr-7yf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-0t-gwf">
-                                                        <rect key="frame" x="0.0" y="104" width="112" height="104"/>
+                                                        <rect key="frame" x="0.0" y="104" width="108" height="104"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qy-Ay-E0v">
-                                                <rect key="frame" x="223.5" y="0.0" width="111.5" height="208"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="C6Z-9z-fD4">
+                                                <rect key="frame" x="226.5" y="0.0" width="108.5" height="208"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 2 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qy-Ay-E0v">
+                                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="47"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82047441710000002" blue="0.0076025744149999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JmC-WE-Frw">
+                                                        <rect key="frame" x="0.0" y="47" width="108.5" height="161"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="150"/>
+                                                        <color key="textColor" red="0.0" green="0.8204744170984456" blue="0.0076025744145800118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98o-uX-cU3">
@@ -103,9 +125,10 @@
                     </view>
                     <connections>
                         <outlet property="Player1Button" destination="q3b-B6-4Cb" id="ARF-mg-HYu"/>
-                        <outlet property="Player1Score" destination="3OJ-3z-Ohx" id="udM-m3-gOW"/>
+                        <outlet property="Player1ScoreDisplay" destination="Pz1-YR-zSw" id="bcc-Yy-Zei"/>
                         <outlet property="Player2Button" destination="98o-uX-cU3" id="DbJ-yk-t0S"/>
-                        <outlet property="Player2Score" destination="0Qy-Ay-E0v" id="9rM-nw-6iy"/>
+                        <outlet property="Player2ScoreDisplay" destination="JmC-WE-Frw" id="2n1-Vq-TD8"/>
+                        <outlet property="StartButton" destination="XA9-ID-3Kg" id="ymY-Kt-yAr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
