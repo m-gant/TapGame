@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Darwin
 
 class ViewController: UIViewController {
     
@@ -16,9 +17,13 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var Player1Score: UILabel!
-    
-    
     @IBOutlet weak var Player2Score: UILabel!
+
+    
+    @IBOutlet weak var Player1Button: UIButton!
+    @IBOutlet weak var Player2Button: UIButton!
+    
+    
     @IBAction func Startpressed(_ sender: Any) {
         Player1Value = 0
         Player2Value = 0
@@ -33,6 +38,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+         // Rotate Button
+        Player1Button.transform.rotated(by: CGFloat.pi)
+        
+        //Round Corners
+        Player1Button.layer.cornerRadius = 0.05*Player1Button.bounds.size.width
+        Player1Button.clipsToBounds = true
+        
+        Player2Button.layer.cornerRadius = 0.05*Player2Button.bounds.size.width
+        Player2Button.clipsToBounds = true
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -21,11 +21,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pMo-FA-xrf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pMo-FA-xrf" userLabel="Root Stack View">
+                                <rect key="frame" x="20" y="20" width="335" height="639"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3b-B6-4Cb">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="207.5"/>
                                         <color key="backgroundColor" red="0.15916485520000001" green="0.38396392070000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                         <state key="normal" title="Player 1">
@@ -35,33 +35,44 @@
                                             <action selector="Player1Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XGg-Wf-CIN"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T35-ls-RLa">
-                                        <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="T35-ls-RLa" userLabel="Menu &amp; Display Stack View">
+                                        <rect key="frame" x="0.0" y="215.5" width="335" height="208"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-3z-Ohx">
-                                                <rect key="frame" x="0.0" y="0.0" width="125" height="222"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-55-Dsn">
-                                                <rect key="frame" x="125" y="0.0" width="125" height="222"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p9F-ga-HMR" userLabel="Player 1 Display Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="111.5" height="208"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Player 1 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OJ-3z-Ohx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="111.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pz1-YR-zSw">
+                                                        <rect key="frame" x="0.0" y="20.5" width="111.5" height="187.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Gsq-55-Dsn" userLabel="Player 2 Display Stack View">
+                                                <rect key="frame" x="111.5" y="0.0" width="112" height="208"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XA9-ID-3Kg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="111"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="112" height="104"/>
                                                         <state key="normal" title="Start"/>
                                                         <connections>
                                                             <action selector="Startpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rjd-Qr-7yf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXu-0t-gwf">
-                                                        <rect key="frame" x="0.0" y="111" width="125" height="111"/>
+                                                        <rect key="frame" x="0.0" y="104" width="112" height="104"/>
                                                         <state key="normal" title="Button"/>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2 Score" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qy-Ay-E0v">
-                                                <rect key="frame" x="250" y="0.0" width="125" height="222"/>
+                                                <rect key="frame" x="223.5" y="0.0" width="111.5" height="208"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -69,7 +80,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98o-uX-cU3">
-                                        <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                        <rect key="frame" x="0.0" y="431.5" width="335" height="207.5"/>
                                         <color key="backgroundColor" red="0.15916485515842527" green="0.38396392071752472" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
                                         <state key="normal" title="Player 2">
@@ -84,14 +95,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="pMo-FA-xrf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6O1-uu-RqH"/>
-                            <constraint firstItem="pMo-FA-xrf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UwR-5c-wh0"/>
-                            <constraint firstAttribute="trailing" secondItem="pMo-FA-xrf" secondAttribute="trailing" id="WEQ-g3-erh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pMo-FA-xrf" secondAttribute="bottom" id="jLF-of-GNa"/>
+                            <constraint firstItem="pMo-FA-xrf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" id="6O1-uu-RqH"/>
+                            <constraint firstItem="pMo-FA-xrf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="UwR-5c-wh0"/>
+                            <constraint firstAttribute="trailing" secondItem="pMo-FA-xrf" secondAttribute="trailing" constant="20" symbolic="YES" id="WEQ-g3-erh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pMo-FA-xrf" secondAttribute="bottom" constant="8" symbolic="YES" id="jLF-of-GNa"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Player1Button" destination="q3b-B6-4Cb" id="ARF-mg-HYu"/>
                         <outlet property="Player1Score" destination="3OJ-3z-Ohx" id="udM-m3-gOW"/>
+                        <outlet property="Player2Button" destination="98o-uX-cU3" id="DbJ-yk-t0S"/>
                         <outlet property="Player2Score" destination="0Qy-Ay-E0v" id="9rM-nw-6iy"/>
                     </connections>
                 </viewController>
